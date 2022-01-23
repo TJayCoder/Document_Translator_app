@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "133587005103",
+    "firebase_url": "https://database-464cc.firebaseio.com",
+    "project_id": "database-464cc",
+    "storage_bucket": "database-464cc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:133587005103:android:12143858c0f627a931ae5a",
+        "android_client_info": {
+          "package_name": "com.roamcode.distinctions"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "133587005103-16foq7qsp02lo8g60s5phr243lgskrdu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgF_z6CWLRClhTYubmvouZ7n-X1CDaHU0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "133587005103-16foq7qsp02lo8g60s5phr243lgskrdu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

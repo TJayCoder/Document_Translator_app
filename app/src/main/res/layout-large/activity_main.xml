@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivityDistinctions">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Light"
+            android:backgroundTint="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="327dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/graduationcap" />
+
+        <TextView
+            android:id="@+id/txtupload"
+            android:layout_width="match_parent"
+            android:layout_height="123dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="Upload Document"
+            android:textSize="48sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="123dp"
+            tools:layout_editor_absoluteY="130dp" />
+
+        <ImageView
+            android:id="@+id/ivUpload"
+            android:layout_width="match_parent"
+            android:layout_height="127dp"
+            android:layout_marginBottom="20dp"
+            app:srcCompat="@drawable/uploadapp"
+            tools:layout_editor_absoluteX="96dp"
+            tools:layout_editor_absoluteY="195dp" />
+
+        <Button
+            android:id="@+id/btnpdfsubmit"
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:layout_marginBottom="20dp"
+            android:text="PDF Document"
+            android:textSize="34sp"
+            tools:layout_editor_absoluteX="161dp"
+            tools:layout_editor_absoluteY="483dp" />
+
+        <Button
+            android:id="@+id/btnskip"
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:layout_marginBottom="20dp"
+            android:text="Skip"
+            android:textSize="34sp"
+            tools:layout_editor_absoluteX="161dp"
+            tools:layout_editor_absoluteY="483dp" />
+
+        <Button
+            android:id="@+id/btnClasses"
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:enabled="false"
+            android:text="Live Classes"
+            android:textSize="34sp" />
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView1"
+            android:layout_width="match_parent"
+            android:layout_height="103dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            app:adSize="BANNER"
+            app:adUnitId="ca-app-pub-4146389542308743/9581156873"></com.google.android.gms.ads.AdView>
+
+    </LinearLayout>
+</ScrollView>

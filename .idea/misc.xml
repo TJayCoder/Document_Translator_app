@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Joseph/AndroidStudioProjects/Distinctions/app/src/main/res/layout/activity_google_translate.xml" value="0.29322916666666665" />
+        <entry key="..\:/Users/Joseph/AndroidStudioProjects/Distinctions/app/src/main/res/layout/activity_home_menu.xml" value="0.29322916666666665" />
+        <entry key="..\:/Users/Joseph/AndroidStudioProjects/Distinctions/app/src/main/res/layout/activity_login.xml" value="0.2838541666666667" />
+        <entry key="..\:/Users/Joseph/AndroidStudioProjects/Distinctions/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Joseph/AndroidStudioProjects/Distinctions/app/src/main/res/layout/activity_register_student.xml" value="0.2838541666666667" />
+        <entry key="..\:/Users/Joseph/AndroidStudioProjects/Distinctions/app/src/main/res/layout/activity_splash.xml" value="0.2838541666666667" />
+        <entry key="..\:/Users/Joseph/AndroidStudioProjects/Joseph/Distinctions/app/src/main/res/layout-large/activity_google_translate.xml" value="0.22" />
+        <entry key="..\:/Users/Joseph/AndroidStudioProjects/Joseph/Distinctions/app/src/main/res/layout-large/activity_main.xml" value="0.15" />
+        <entry key="..\:/Users/Joseph/AndroidStudioProjects/Joseph/Distinctions/app/src/main/res/layout-large/activity_splash.xml" value="0.15300546448087432" />
+        <entry key="..\:/Users/Joseph/AndroidStudioProjects/Joseph/Distinctions/app/src/main/res/layout-normal/activity_google_translate.xml" value="0.14" />
+        <entry key="..\:/Users/Joseph/AndroidStudioProjects/Joseph/Distinctions/app/src/main/res/layout-normal/activity_main.xml" value="0.21784420289855072" />
+        <entry key="..\:/Users/Joseph/AndroidStudioProjects/Joseph/Distinctions/app/src/main/res/layout-normal/activity_splash.xml" value="0.2028985507246377" />
+        <entry key="..\:/Users/Joseph/AndroidStudioProjects/Joseph/Distinctions/app/src/main/res/layout-small/activity_google_translate.xml" value="0.7678571428571429" />
+        <entry key="..\:/Users/Joseph/AndroidStudioProjects/Joseph/Distinctions/app/src/main/res/layout-small/activity_splash.xml" value="0.22" />
+        <entry key="..\:/Users/Joseph/AndroidStudioProjects/Joseph/Distinctions/app/src/main/res/layout/activity_aboutus_distinct.xml" value="0.21965579710144928" />
+        <entry key="..\:/Users/Joseph/AndroidStudioProjects/Joseph/Distinctions/app/src/main/res/layout/activity_forgot_password_distictions.xml" value="0.22192028985507245" />
+        <entry key="..\:/Users/Joseph/AndroidStudioProjects/Joseph/Distinctions/app/src/main/res/layout/activity_google_translate.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/Joseph/AndroidStudioProjects/Joseph/Distinctions/app/src/main/res/layout/activity_help_distinct.xml" value="0.21965579710144928" />
+        <entry key="..\:/Users/Joseph/AndroidStudioProjects/Joseph/Distinctions/app/src/main/res/layout/activity_home_menu.xml" value="0.22" />
+        <entry key="..\:/Users/Joseph/AndroidStudioProjects/Joseph/Distinctions/app/src/main/res/layout/activity_login.xml" value="0.33" />
+        <entry key="..\:/Users/Joseph/AndroidStudioProjects/Joseph/Distinctions/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/Joseph/AndroidStudioProjects/Joseph/Distinctions/app/src/main/res/layout/activity_register_student.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/Joseph/AndroidStudioProjects/Joseph/Distinctions/app/src/main/res/layout/activity_splash.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/Joseph/AndroidStudioProjects/Joseph/Distinctions/app/src/main/res/layout/activity_translate_word.xml" value="0.1918803418803419" />
+        <entry key="..\:/Users/Joseph/AndroidStudioProjects/Joseph/Distinctions/app/src/main/res/layout/spinner_item.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/Joseph/AndroidStudioProjects/Joseph/Distinctions/app/src/main/res/menu/menu.xml" value="0.2" />
+        <entry key="..\:/Users/Joseph/AndroidStudioProjects/Joseph/Distinctions/app/src/main/res/menu/my.xml" value="0.25729166666666664" />
+        <entry key="..\:/Users/Joseph/AndroidStudioProjects/Joseph/Distinctions/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2890625" />
+        <entry key="..\:/Users/Joseph/AndroidStudioProjects/Joseph/Distinctions/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2890625" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
