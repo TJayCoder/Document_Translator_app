@@ -25,7 +25,6 @@ public class AboutusDistinct extends AppCompatActivity {
         appver=findViewById(R.id.appversionabout);
 
         appver.setText("Build Version 1.0.0");
-        appver.setTag("Teashop");
 
 
         facebook.setOnClickListener(new View.OnClickListener() {
@@ -44,7 +43,7 @@ public class AboutusDistinct extends AppCompatActivity {
             public void onClick(View v) {
 
 
-                Uri uri = Uri.parse("https://www.facebook.com/RoamCode/?ref=py_c"); // missing 'http://' will cause crashed
+                Uri uri = Uri.parse("https://sites.google.com/view/documenttranslator/home"); // missing 'http://' will cause crashed
                 Intent intent = new Intent(Intent.ACTION_VIEW, uri);
                 startActivity(intent);
 
@@ -55,7 +54,7 @@ public class AboutusDistinct extends AppCompatActivity {
             public void onClick(View v) {
 
 
-                Uri uri = Uri.parse("https://za.linkedin.com/in/joseph-senyolo-22a233144"); // missing 'http://' will cause crashed
+                Uri uri = Uri.parse("https://www.linkedin.com/in/joseph-senyolo-22a233144/"); // missing 'http://' will cause crashed
                 Intent intent = new Intent(Intent.ACTION_VIEW, uri);
                 startActivity(intent);
 

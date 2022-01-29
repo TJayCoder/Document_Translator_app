@@ -158,10 +158,10 @@ public class MainActivityDistinctions extends AppCompatActivity {
 
                 if (mInterstitialAd != null) {
                     mInterstitialAd.show(MainActivityDistinctions.this);
-                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.roamcode.co.za")));
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://sites.google.com/view/documenttranslator/home")));
                 } else {
                     Log.d(TAG, "The interstitial ad wasn't ready yet.");
-                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.roamcode.co.za")));
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://sites.google.com/view/documenttranslator/home")));
                 }
 
                 return true;
@@ -170,10 +170,10 @@ public class MainActivityDistinctions extends AppCompatActivity {
 
                     if (mInterstitialAd != null) {
                         mInterstitialAd.show(MainActivityDistinctions.this);
-                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com")));
+                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/dev?id=9133669126769704698")));
                     } else {
                         Log.d(TAG, "The interstitial ad wasn't ready yet.");
-                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com")));
+                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/dev?id=9133669126769704698")));
                     }
 
 

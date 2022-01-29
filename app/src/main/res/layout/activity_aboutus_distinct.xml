@@ -78,6 +78,17 @@
                 android:layout_gravity="center"
                 app:srcCompat="@drawable/googletranslatelogo" />
 
+
+            <TextView
+                android:id="@+id/btnlegal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Privacy Policy"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/btnsocialmedia"
                 android:layout_width="match_parent"
@@ -88,8 +99,6 @@
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
-
-
             <TextView
                 android:id="@+id/btncareer"
                 android:layout_width="match_parent"
@@ -97,16 +106,6 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
                 android:text="Career"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/btnlegal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:text="Legal"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
