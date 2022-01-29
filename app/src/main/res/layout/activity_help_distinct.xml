@@ -15,29 +15,39 @@
         android:fontFamily="sans-serif-condensed-light"
         android:gravity="center"
         android:text="Inquiry"
-        android:textSize="20sp" />
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/editTextTextPersonName6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
         android:ems="10"
+        android:hint="Email"
         android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:text="Email" />
+        android:minHeight="48dp" />
 
     <EditText
         android:id="@+id/editTextTextPersonName7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
         android:ems="10"
+        android:hint="Comment"
         android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:text="Comment" />
+        android:minHeight="48dp" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
         android:text="Submit Query" />
 </LinearLayout>

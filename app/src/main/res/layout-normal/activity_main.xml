@@ -61,20 +61,21 @@
         tools:layout_editor_absoluteY="483dp" />
 
         <Button
-        android:id="@+id/btnskip"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:text="Skip"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="483dp" />
+            android:id="@+id/btnskip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Continue"
+            tools:layout_editor_absoluteX="161dp"
+            tools:layout_editor_absoluteY="483dp" />
 
         <Button
             android:id="@+id/btnClasses"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:enabled="false"
-            android:text="Live Classes" />
+            android:text="Live Classes"
+            android:visibility="invisible" />
 
     <com.google.android.gms.ads.AdView
         android:id="@+id/adView1"

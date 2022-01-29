@@ -63,12 +63,12 @@ public class GoogleTranslate extends AppCompatActivity {
     String fromlang[]={"From","English","French","Hebrew","Haitian","Arabic","Belarusian","Bengali","Catalan","Czech","Welsh","Danish","German","Greek","Esperanto"
             ,"Spanish","Persian","Estonian","Finnish","Galician","Gujarati","Hindi","Croatian","Hungarian","Indonesian","Icelandic","Italian","Japanese","Swedish","Portuguese"
             ,"Georgian","Kannada","Korean","Lithuanian","Latvian","Marathi","Maltese","Malay","Macedonian","Dutch","Norwegian","Chinese","Vietnamese","Urdu","Ukrainian","Turkish"
-            ,"Tagalog","Thai","Russian","Polish","Romanian","Slovak","Slovenian","Albanian","Swedish","Tamil","Telugu","Afrikaans"};
+            ,"Tagalog","Thai","Russian","Polish","Romanian","Slovak","Slovenian","Albanian","Swedish","Tamil","Telugu"};
 
     String tolang[]={"To","English","French","Hebrew","Haitian","Arabic","Belarusian","Bengali","Catalan","Czech","Welsh","Danish","German","Greek","Esperanto"
             ,"Spanish","Persian","Estonian","Finnish","Galician","Gujarati","Hindi","Croatian","Hungarian","Indonesian","Icelandic","Italian","Japanese","Swedish","Portuguese"
             ,"Georgian","Kannada","Korean","Lithuanian","Latvian","Marathi","Maltese","Malay","Macedonian","Dutch","Norwegian","Chinese","Vietnamese","Urdu","Ukrainian","Turkish"
-            ,"Tagalog","Thai","Russian","Polish","Romanian","Slovak","Slovenian","Albanian","Swedish","Tamil","Telugu","Afrikaans"};
+            ,"Tagalog","Thai","Russian","Polish","Romanian","Slovak","Slovenian","Albanian","Swedish","Tamil","Telugu"};
 
     private static final int Request_Permission_Code=1;
     int Languagecode,fromLanguageCode,tolanguageCode=0;
@@ -241,7 +241,7 @@ public class GoogleTranslate extends AppCompatActivity {
 
 
         if(isConnected()) {
-            tvloader.setText("Downloading....");
+            tvloader.setText("Downloading Our Dictionary. \n patiently wait for few seconds....");
             FirebaseTranslatorOptions options = new FirebaseTranslatorOptions.Builder()
                     .setSourceLanguage(fromlanguageCode)
                     .setTargetLanguage(tolanguageCode)
@@ -530,10 +530,10 @@ public class GoogleTranslate extends AppCompatActivity {
                 Languagecode= FirebaseTranslateLanguage.AR;
                 break;
 
-            case "Afrikaans":
+        /*    case "Afrikaans":
                 Languagecode= FirebaseTranslateLanguage.AF;
                 break;
-
+*/
 
             default:
                 Languagecode=0;

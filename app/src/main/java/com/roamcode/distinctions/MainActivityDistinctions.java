@@ -26,9 +26,12 @@ import android.widget.Toast;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdSize;
 import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.LoadAdError;
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.initialization.InitializationStatus;
 import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
+import com.google.android.gms.ads.interstitial.InterstitialAd;
+import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback;
 import com.itextpdf.text.pdf.PdfReader;
 import com.itextpdf.text.pdf.parser.PdfTextExtractor;
 
@@ -51,11 +54,15 @@ public class MainActivityDistinctions extends AppCompatActivity {
 
     private ProgressBar progressbar;
 
+    private InterstitialAd mInterstitialAd;
+
     Toolbar mtoolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        interstitialads();
 
         mtoolbar=findViewById(R.id.toolbar);
         mtoolbar.setTitle("Home");
@@ -148,19 +155,43 @@ public class MainActivityDistinctions extends AppCompatActivity {
                 return true;
 
             case R.id.policy:
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.roamcode.co.za")));
+
+                if (mInterstitialAd != null) {
+                    mInterstitialAd.show(MainActivityDistinctions.this);
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.roamcode.co.za")));
+                } else {
+                    Log.d(TAG, "The interstitial ad wasn't ready yet.");
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.roamcode.co.za")));
+                }
+
                 return true;
 
             case R.id.rate:
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com")));
+
+                    if (mInterstitialAd != null) {
+                        mInterstitialAd.show(MainActivityDistinctions.this);
+                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com")));
+                    } else {
+                        Log.d(TAG, "The interstitial ad wasn't ready yet.");
+                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com")));
+                    }
+
+
                 return true;
 
-            case R.id.help:
+          /*  case R.id.help:
                 startActivity(new Intent(MainActivityDistinctions.this,helpDistinct.class));
-                return true;
+                return true;*/
 
             case R.id.AboutUs:
-                startActivity(new Intent(MainActivityDistinctions.this,AboutusDistinct.class));
+                 if (mInterstitialAd != null) {
+                    mInterstitialAd.show(MainActivityDistinctions.this);
+                     startActivity(new Intent(MainActivityDistinctions.this,AboutusDistinct.class));
+
+                 } else {
+                        Log.d(TAG, "The interstitial ad wasn't ready yet.");
+                        startActivity(new Intent(MainActivityDistinctions.this,AboutusDistinct.class));
+                 }
                 return true;
 
             default:
@@ -224,6 +255,31 @@ public class MainActivityDistinctions extends AppCompatActivity {
 
     }
 
+
+
+
+public void interstitialads(){
+
+
+        AdRequest adRequest1 = new AdRequest.Builder().build();
+        InterstitialAd.load(this,"ca-app-pub-4146389542308743/7650672694", adRequest1,
+        new InterstitialAdLoadCallback() {
+                @Override
+                public void onAdLoaded(@NonNull InterstitialAd interstitialAd) {
+                        // The mInterstitialAd reference will be null until
+                        // an ad is loaded.
+                        mInterstitialAd = interstitialAd;
+                        Log.i(TAG, "onAdLoaded");
+                        }
+
+                    @Override
+                    public void onAdFailedToLoad(@NonNull LoadAdError loadAdError) {
+                            // Handle the error
+                            Log.i(TAG, loadAdError.getMessage());
+                            mInterstitialAd = null;
+                            }
+                    });
+    }
 
  /*   private void extratextWordfile(Uri uri) {
 
