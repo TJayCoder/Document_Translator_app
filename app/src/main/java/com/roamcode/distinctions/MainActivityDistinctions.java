@@ -6,9 +6,13 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
+import android.Manifest;
 import android.app.Activity;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -56,6 +60,8 @@ public class MainActivityDistinctions extends AppCompatActivity {
 
     private InterstitialAd mInterstitialAd;
 
+    final int STORAGE_PERMISSION_CODE=2022;
+
     Toolbar mtoolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,6 +69,9 @@ public class MainActivityDistinctions extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         interstitialads();
+
+        //check permission
+        checkPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE, STORAGE_PERMISSION_CODE);
 
         mtoolbar=findViewById(R.id.toolbar);
         mtoolbar.setTitle("Home");
@@ -121,6 +130,7 @@ public class MainActivityDistinctions extends AppCompatActivity {
         btnpdf.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 callchoosepdfFromDevice();
             }
         });
@@ -385,6 +395,43 @@ public void interstitialads(){
 
     }
         }).start();
+    }
+
+
+    // This function is called when user accept or decline the permission.
+// Request Code is used to check which permission called this function.
+// This request code is provided when user is prompt for permission.
+    @Override
+    public void onRequestPermissionsResult(int requestCode,
+                                           @NonNull String[] permissions,
+                                           @NonNull int[] grantResults)
+    {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+
+   if (requestCode == STORAGE_PERMISSION_CODE) {
+            if (grantResults.length > 0
+                    && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+              //  Toast.makeText(MainActivityDistinctions.this, "Storage Permission Granted", Toast.LENGTH_SHORT).show();
+            }
+            else {
+                Toast.makeText(MainActivityDistinctions.this, "Storage Permission Denied", Toast.LENGTH_SHORT).show();
+            }
+        }
+    }
+
+
+    // Function to check and request permission
+    public void checkPermission(String permission, int requestCode)
+    {
+        // Checking if permission is not granted
+        if (ContextCompat.checkSelfPermission(MainActivityDistinctions.this, permission) == PackageManager.PERMISSION_DENIED) {
+            ActivityCompat.requestPermissions(MainActivityDistinctions.this, new String[] { permission }, requestCode);
+
+            Toast.makeText(MainActivityDistinctions.this, "Storage Permission not Granted", Toast.LENGTH_SHORT).show();
+        }
+        else {
+           // Toast.makeText(MainActivityDistinctions.this, "Permission already granted", Toast.LENGTH_SHORT).show();
+        }
     }
 
 
